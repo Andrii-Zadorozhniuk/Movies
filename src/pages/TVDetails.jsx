@@ -10,6 +10,7 @@ const TVDetails = () => {
             setTv(data);
             console.log(data)
         })
+        window.scrollTo(0, 0)
     }, [])
   return (
     <Details movie={tv} />

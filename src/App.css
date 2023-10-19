@@ -14,7 +14,13 @@
     box-shadow: 0 0 3px 2px #ffffff9d;
 }
 
-
+body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar { 
+  display: none;
+}
 
 
 
@@ -102,7 +108,9 @@
     height: 0;
   }
 
-
+  .scroll-hidden::-webkit-scrollbar{
+    display: none;
+  }
   .link::after {
     display: block;
     content: '';
@@ -124,4 +132,16 @@
   }
 
 
-
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  column-gap: 20px;
+  row-gap: 30px;
+  margin-bottom: 3rem;
+}
+@media (max-width: 800px) {
+  .movies-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    row-gap: 35px;
+  }
+}

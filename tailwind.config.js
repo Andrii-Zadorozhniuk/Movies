@@ -11,7 +11,8 @@ module.exports = {
       'lg': {'max': '991px'} ,
       'md': {'max': '767px'} ,
       'sm': {'max': '550px'} ,
-      'xsm': {'max': '360px'} ,
+      'xsm': {'max': '380px'} ,
+      '2xsm': {'max': '310px'} ,
     }
   },
   plugins: [],
